@@ -1,66 +1,18 @@
-    <!-- Header -->
-    <header>
-        <h1>Welcome to Bialowas High School</h1>
-        <p>Address: 9808 Nixon Drive</p>
-        <p>Private School | Grades 9-12</p>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <!-- Add more navigation links here -->
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Bialowas High School is a small but prestigious private school with a strong focus on academic excellence and character development.</p>
-            <p>Teacher and Principal: Jessica Bialowas</p>
-            <p>Jessica Bialowas has a Masters in Education, is a certified teacher, and has over 20 years of experience in the field of education.</p>
-        </section>
-
-        <section id="achievements">
-            <h2>Impressive Achievements</h2>
-            <p>Our students have accomplished remarkable achievements in the 2022-2023 school year:</p>
-            <ul>
-                <li>Numerous musicianship awards for excellence in music</li>
-                <li>Acting Company of Excellence</li>
-                <li>NowBeat Project (2023)</li>
-                <li>Outstanding Studios Innovation (2022)</li>
-                <li>Award #5</li>
-                <li>Award #6</li>
-                <li>Award #7</li>
-                <li>Award #8</li>
-                <!-- Add more awards and recognitions here -->
-            </ul>
-        </section>
-
-        <!-- Add the image here -->
-        <section id="image">
-            <h2>Our School</h2>
-            <img src="school.png" alt="Bialowas High School" width="656" height="538">
-        </section>
-    </main>
-
-    <br><br>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2023 Bialowas High School. All rights reserved.</p>
-    </footer>
-
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bialowas High School</title>
     <style>
-        /* styles.css except it's not */
-
         /* Global Styles */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f1f1f1;
         }
 
         .container {
@@ -71,17 +23,36 @@
 
         /* Header */
         header {
-            background-color: #f4f4f4;
+            background-color: #333;
             padding: 20px;
             text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0;
         }
 
         /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
 
         nav ul li {
@@ -90,19 +61,23 @@
         }
 
         nav ul li a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
             padding: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
         }
 
         nav ul li a:hover {
-            background-color: #333;
-            color: #fff;
+            color: #ff8000;
         }
 
         /* Main Content */
         main {
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         section {
@@ -111,20 +86,108 @@
 
         section h2 {
             font-size: 24px;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            color: #333;
         }
 
         section p {
             line-height: 1.5;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        section ul {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            color: #666;
+        }
+
+        section ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Image */
+        #image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         /* Footer */
         footer {
-            position: fixed;
-            width: 100%;
-            bottom: 0%;
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            font-size: 14px;
         }
     </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Bialowas High School</h1>
+            <p>Address: 9808 Nixon Drive</p>
+            <p>Private School | Grades 9-12</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <!-- Add more navigation links here -->
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Bialowas High School is a small but prestigious private school with a strong focus on academic excellence and character development.</p>
+                <p>Teacher and Principal: Jessica Bialowas</p>
+                <p>Jessica Bialowas has a Masters in Education, is a certified teacher, and has over 20 years of experience in the field of education.</p>
+            </section>
+
+            <section id="achievements">
+                <h2>Impressive Achievements</h2>
+                <p>Our students have accomplished remarkable achievements in the 2022-2023 school year:</p>
+                <ul>
+                    <li>Numerous musicianship awards for excellence in music</li>
+                    <li>Acting Company of Excellence</li>
+                    <li>NowBeat Project (2023)</li>
+                    <li>Outstanding Studios Innovation (2022)</li>
+                    <li>Award #5</li>
+                    <li>Award #6</li>
+                    <li>Award #7</li>
+                    <li>Award #8</li>
+                    <!-- Add more awards and recognitions here -->
+                </ul>
+            </section>
+
+            <section id="image">
+                <h2>Our School</h2>
+                <img src="school.png" alt="Bialowas High School">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Bialowas High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+<!--Generated by ChatGPT-->
+</body></html>
